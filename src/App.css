@@ -1,0 +1,121 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.google.com/share?selection.family=Oswald:wght@200..700');
+
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-bar .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.top-bar .social-icons a {
+  color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+  position: absolute;
+  width: 98%;
+  background-image: linear-gradient( to bottom right, 
+  #ff4b1f, grey); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px 1.0%;
+  margin-top: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* transition: #f57c20; */
+  /* margin-left: 15px; */
+}
+
+.navbar-custom:hover {
+  background-color: #fff;
+}
+
+.navbar-brand-custom {
+  position: absolute;
+  font-size: 4.0rem;
+  font-weight: bold;
+  display: flex; /* Use flexbox to align the logo and text horizontally */
+  align-items: center; /* Vertically align the logo and text */
+  padding: 0px 15px;
+  color: #333;
+}
+
+.navbar-custom .container {
+  display: flex;
+  justify-content: space-between; /* Spread items across the navbar */
+  align-items: center; /* Vertically center items */
+} 
+
+.nav-link-custom {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: 1px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  position: relative;
+  padding:0.1rem 1rem;
+}
+.nav-link-custom:hover {
+  color: #fff; /* Change text color */
+}  
+
+.nav-link-custom::before {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the text */
+  left: 0;
+  width: 0; /* Initial width */
+  height: 3px; /* Height of the underline or box */
+  background-color: #fff; /* Hover box color */
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+.nav-link-custom:hover::before {
+  width: 100%; /* Expand the underline or box */
+}
+/* .nav-link-active {
+  color: #007acc;
+} */
+
+/* Social Icons Styling */
+.navbar-social-icons a {
+  color: #ffffff;
+}
+
+.nav-link-custom:hover {
+   color: #fff;  /*to change the hover colour for header */
+}
+
+/* Sliding Carousel Section */
+.carousel-caption h3 {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+  color: #fff;
+}
+
+.logo {
+  height: 190px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 5%; /* Add spacing between the logo and the text */
+}
+
+
